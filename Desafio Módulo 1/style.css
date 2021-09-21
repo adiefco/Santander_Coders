@@ -1,0 +1,278 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Rambla', sans-serif;
+  background-color: #f3f2ee;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: 1px solid #ebebeb;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbarContainer {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 999;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  width: 768px;
+  padding: 0 1.7rem;
+}
+
+.logo {
+  margin-right: -0.5rem;
+  cursor: pointer;
+}
+
+.searchContainer {
+  width: 31rem;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+#search {
+  padding: 1rem;
+  padding-left: 3rem;
+  width: 70%;
+  transition: width 0.5s ease;
+  border: none;
+  background-color: #eef3f7;
+  border-radius: 0.5rem;
+}
+
+#search:focus {
+  outline: none;
+  padding-left: 4rem;
+  width: 100%;
+}
+
+#search:hover {
+  outline: none;
+  border: none;
+}
+
+.searchIcon {
+  cursor: text;
+  position: absolute;
+  left: 1.2rem;
+  top: 1.2rem;
+}
+
+.menuItems {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.item {
+  list-style: none;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+  width: 5rem;
+}
+
+.menuGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  filter: invert(30%);
+}
+
+.menuGroup:hover {
+  filter: invert(0%);
+  transition: all 0.3s ease;
+}
+
+.menuGroup span {
+  font-size: 1rem;
+}
+
+.profile {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgItem {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.mainContent {
+  width: 796px;
+  margin-top: 7rem;
+}
+
+.mainContent article {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin: 3rem;
+}
+
+.profileInfo {
+  background: no-repeat url('./images/Frame\ 1\ \(4\).png');
+  background-size: contain;
+  height: 35rem;
+  position: relative;
+}
+
+.profileInfoContainer {
+  position: absolute;
+  top: 9rem;
+  padding: 3rem;
+}
+.profileImg {
+  margin-bottom: 1rem;
+}
+
+.profileImg img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.profileTextContainer {
+  margin-bottom: 1.1rem;
+}
+
+.profileTextContainer > * {
+  margin-bottom: 2px;
+}
+
+.profileTextH {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.profileTextDescription {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.profileTextAddress {
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.profileButtons > button {
+  padding: 0.4rem 1.5rem;
+  border-radius: 1.5rem;
+  outline: none;
+  border: 1px #666666 solid;
+  background-color: white;
+  color: #666666;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.profileButtons > button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.profileButtons > button:not(:last-child) {
+  margin-right: 1.4rem;
+}
+
+#profileButtonsEmp {
+  background-color: #0b65c2;
+  color: white;
+  border: 1px #0b65c2 solid;
+}
+
+.articleContainer {
+  padding: 1.6rem 2.1rem;
+}
+
+.articleTitleHeading {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.contentImgContainer {
+  margin-right: 2.1rem;
+  padding-bottom: 4rem;
+}
+
+.contentImgItem {
+  width: 5rem;
+}
+
+.contentTextContainer {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contentTextContainer > h3 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.contentTextContainer > h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.34rem;
+}
+
+.contentTextContainer > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.34rem;
+  color: #666666;
+}
+
+.lastP {
+  margin-bottom: 3rem;
+}
+
+.sectionContainer {
+  padding: 1rem 0 2rem 0;
+}
+
+.sectionContainer h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.sectionContainer ul li {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
